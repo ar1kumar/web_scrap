@@ -9,7 +9,7 @@
 				  for($i=0;$i<4;$i++){
 					  echo "<img height=\"200\" src='{$result['responseData']['results'][$i]['tbUrl']}' />";
 					  echo "<br/>";
-					  $content = {$result['responseData']['results'][$i]['tbUrl']};
+					  $content = $result['responseData']['results'][$i]['tbUrl'];
 					  file_put_contents('grabs/image'.[$i].'.jpg', $content);
 				  }
 				 
